@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.markwon.core)
     implementation(libs.markwon.ext.strikethrough)
+    implementation(libs.markwon.ext.tables)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

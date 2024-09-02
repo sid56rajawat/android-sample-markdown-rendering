@@ -10,6 +10,7 @@ data class SampleData(
     val backgroundColorText: String = "<span style=\"background-color: yellow;\">Background Color Text</span>",
     val fontColorText: String = "<span style=\"color: red;\">Font Color Text</span>",
     val lineBreakText: String = "Line 1<br>Line 2",
+    val lineBreakTextNative: String = "Line 2\n\nLine 3",
     val headingsText: String = """
         # Heading 1
         ## Heading 2
@@ -28,14 +29,15 @@ data class SampleData(
 """,
     val indentText: String = """
     Indented Text
+        Double Indent
 """,
     val tableText: String = """
 | Header 1 | Header 2 |
-|----------|----------|
+| -------- | -------- |
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
 """,
-    val pureMarkDown: List<String> = listOf(plainText, boldText, italicText, strikeThroughText, hyperlinkText, headingsText, bulletListText, numberedListText, indentText, tableText),
+    val pureMarkDown: List<String> = listOf(plainText, boldText, italicText, strikeThroughText, hyperlinkText, lineBreakTextNative, headingsText, bulletListText, numberedListText, indentText, tableText),
     val htmlData: List<String> = listOf(underlineText, backgroundColorText, fontColorText, lineBreakText),
     val allData: List<String> = listOf(plainText, boldText, italicText, underlineText, strikeThroughText, hyperlinkText, backgroundColorText, fontColorText, lineBreakText, headingsText, bulletListText, numberedListText, indentText, tableText)
 )

@@ -30,7 +30,7 @@ fun MarkwonDemo(){
         }
 
         item {
-            Spacer(modifier = Modifier.height(100.dp))
+            Spacer(modifier = Modifier.height(25.dp))
             Text(text = "Native Markdown Text")
         }
         items(sampleData.pureMarkDown) { item ->
@@ -38,7 +38,7 @@ fun MarkwonDemo(){
         }
 
         item {
-            Spacer(modifier = Modifier.height(100.dp))
+            Spacer(modifier = Modifier.height(25.dp))
             Text(text = "Native HTML Text")
         }
         items(sampleData.htmlData) { item ->
