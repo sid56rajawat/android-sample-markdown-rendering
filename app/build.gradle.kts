@@ -58,7 +58,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation("io.noties.markwon:core:4.6.2") // Markwon core library
+    implementation(libs.markwon.core)
+    implementation(libs.markwon.ext.strikethrough)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
