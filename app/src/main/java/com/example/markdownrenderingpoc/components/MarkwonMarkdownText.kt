@@ -15,6 +15,7 @@ import com.example.markdownrenderingpoc.sampledata.SampleData
 import io.noties.markwon.Markwon
 import io.noties.markwon.ext.strikethrough.StrikethroughPlugin
 import io.noties.markwon.ext.tables.TablePlugin
+import io.noties.markwon.html.HtmlPlugin
 
 @Composable
 fun MarkwonMarkdownText(content: String) {
@@ -22,6 +23,7 @@ fun MarkwonMarkdownText(content: String) {
     val markwon = Markwon.builder(context)
         .usePlugin(StrikethroughPlugin.create())
         .usePlugin(TablePlugin.create(context))
+        .usePlugin(HtmlPlugin.create())
         .build()
 
     AndroidView(factory = { TextView(context).apply {
@@ -37,6 +39,6 @@ fun MarkwonMarkdownTextPreview(){
     Box(modifier = Modifier
         .background(Color.White)
         .fillMaxSize()) {
-        MarkwonMarkdownText(content = sampleData.strikeThroughText)
+        MarkwonMarkdownText(content = sampleData.backgroundColorText)
     }
 }
